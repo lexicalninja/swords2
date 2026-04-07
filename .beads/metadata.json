@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "swords2",
+  "project_id": "90231a22-ffff-405e-8990-1abc0a7ed607"
+}
