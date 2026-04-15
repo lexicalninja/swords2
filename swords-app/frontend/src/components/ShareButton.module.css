@@ -1,0 +1,22 @@
+.btn {
+  padding: 12px 28px;
+  border-radius: var(--btn-radius);
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: var(--accent-faint);
+}
+
+.btn[data-copied="true"] {
+  border-color: var(--bar-high);
+  color: var(--bar-high);
+}

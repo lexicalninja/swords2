@@ -1,0 +1,63 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(28px, 6vw, 42px);
+  height: clamp(34px, 7vw, 50px);
+  border-radius: 6px;
+  font-size: clamp(14px, 3vw, 22px);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.4s cubic-bezier(.4,0,.2,1),
+              color      0.4s cubic-bezier(.4,0,.2,1),
+              border     0.4s cubic-bezier(.4,0,.2,1),
+              transform  0.4s cubic-bezier(.4,0,.2,1);
+}
+
+/* Visible (outer) tile */
+.visible {
+  background: var(--tile-visible-bg);
+  color:      var(--tile-visible-color);
+  border:     2px solid var(--tile-visible-border);
+}
+
+/* Hidden tile — "?" state */
+.hidden {
+  background: var(--tile-hidden-bg);
+  color:      var(--tile-hidden-color);
+  border:     2px solid var(--tile-hidden-border);
+}
+
+/* Solved — inner word revealed correctly */
+.solved {
+  background: var(--tile-solved-bg);
+  color:      var(--tile-solved-color);
+  border:     2px solid var(--tile-solved-border);
+}
+
+/* Failed — gave up */
+.failed {
+  background: var(--tile-failed-bg);
+  color:      var(--tile-failed-color);
+  border:     2px solid var(--tile-failed-border);
+}
+
+/* Celebration scale-up on solve */
+.celebrate {
+  animation: scaleUp 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes scaleUp {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}

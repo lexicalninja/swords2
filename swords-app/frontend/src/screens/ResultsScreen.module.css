@@ -1,0 +1,86 @@
+.screen {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.inner {
+  text-align: center;
+  max-width: var(--card-max-width);
+  width: 100%;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  margin-bottom: 8px;
+}
+
+.score {
+  font-size: clamp(48px, 12vw, 64px);
+  font-weight: 800;
+  font-family: var(--font-serif);
+  color: var(--accent);
+  line-height: 1;
+  margin: 12px 0;
+}
+
+.of {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.puzzle-label { color: var(--text-secondary); }
+
+.outcome[data-solved="true"]  { color: var(--bar-high); }
+.outcome[data-solved="false"] { color: var(--bar-low); }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-btn {
+  padding: 14px 48px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.menu-btn:hover { background: var(--accent-faint); }

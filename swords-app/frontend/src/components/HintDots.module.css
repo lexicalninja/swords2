@@ -1,0 +1,22 @@
+.dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.dot[data-used="false"] {
+  background: var(--bg-mid);
+  border: 1px solid var(--bg-card-border);
+}
+
+.dot[data-used="true"] {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+}

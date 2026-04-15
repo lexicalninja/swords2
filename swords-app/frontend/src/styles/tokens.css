@@ -1,0 +1,61 @@
+:root {
+  /* ── Backgrounds ── */
+  --bg-base:        #0d1a0f;
+  --bg-mid:         #1a2e1a;
+  --bg-surface:     #111e12;
+  --bg-card:        #111e12;
+  --bg-card-border: #1e3320;
+
+  /* ── Accent ── */
+  --accent:         #8fbc5a;
+  --accent-dim:     #6a9142;
+  --accent-faint:   rgba(143, 188, 90, 0.15);
+
+  /* ── Text ── */
+  --text-primary:   #e8f0e0;
+  --text-secondary: #a8bfa0;
+  --text-muted:     #6b7c62;
+
+  /* ── Tiles ── */
+  --tile-visible-bg:      #e8f0e0;
+  --tile-visible-color:   #111e12;
+  --tile-visible-border:  #ccd8c0;
+  --tile-hidden-bg:       #0a120b;
+  --tile-hidden-color:    #6b7c62;
+  --tile-hidden-border:   #1e3320;
+  --tile-solved-bg:       #2d5a1b;
+  --tile-solved-color:    #a8d878;
+  --tile-solved-border:   #4a8a2a;
+  --tile-failed-bg:       #4a1a1a;
+  --tile-failed-color:    #e87070;
+  --tile-failed-border:   #7a3030;
+
+  /* ── Hint tiers ── */
+  --hint-vague-bg:    #0f1f12;
+  --hint-vague-color: #5a8f6a;
+  --hint-warm-bg:     #111f14;
+  --hint-warm-color:  #7aaa6a;
+  --hint-warmer-bg:   #141f12;
+  --hint-warmer-color:#9abc6a;
+  --hint-obvious-bg:  #162010;
+  --hint-obvious-color:#b8d878;
+
+  /* ── Points bar ── */
+  --bar-high:   #5aa832;
+  --bar-mid:    #8fbc5a;
+  --bar-low:    #c97a3a;
+  --bar-track:  #0a120b;
+
+  /* ── Layout ── */
+  --card-max-width: 520px;
+  --card-radius:    16px;
+  --btn-radius:     8px;
+  --gap-sm:         8px;
+  --gap-md:         16px;
+  --gap-lg:         24px;
+
+  /* ── Typography ── */
+  --font-mono:   'DM Mono', monospace;
+  --font-sans:   'DM Sans', sans-serif;
+  --font-serif:  'Playfair Display', Georgia, serif;
+}

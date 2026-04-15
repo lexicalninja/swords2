@@ -1,0 +1,28 @@
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-family: var(--font-mono);
+  border: 1px solid transparent;
+}
+
+.badge[data-difficulty="easy"] {
+  background: #e8f5e9;
+  color:      #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.badge[data-difficulty="medium"] {
+  background: #fff3e0;
+  color:      #e65100;
+  border-color: #ffcc80;
+}
+
+.badge[data-difficulty="hard"] {
+  background: #fce4ec;
+  color:      #c62828;
+  border-color: #ef9a9a;
+}

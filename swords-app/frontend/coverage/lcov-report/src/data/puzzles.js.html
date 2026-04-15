@@ -1,0 +1,226 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/data/puzzles.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/data</a> puzzles.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>47/47</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>47/47</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Static fallback puzzle data — used when the API is unavailable.
+// Derived from the hand-curated prototype inventory.
+&nbsp;
+const PUZZLES = [
+  { outer: "slaughter",    inner: "laugh",   start: 1, hints: ["Something joyful hides here", "A sound you make when amused", "Rhymes with 'calf'", "Express amusement out loud"] },
+  { outer: "encompassing", inner: "compass", start: 2, hints: ["It helps you find your way", "Used for navigation", "Has a needle that points north", "_ _ M P A S S"] },
+  { outer: "intoxicate",   inner: "toxic",   start: 2, hints: ["Something dangerous", "Related to poison", "5 letters, means harmful", "_ O X I _"] },
+  { outer: "sweepstake",   inner: "weeps",   start: 1, hints: ["An emotional reaction", "Involves tears", "What someone does when very sad", "_ E E P S"] },
+  { outer: "acquaintance", inner: "quaint",  start: 2, hints: ["A positive adjective", "Describes a charming cottage", "Old-fashioned in an appealing way", "_ U A I N _"] },
+  { outer: "demoralizing", inner: "moral",   start: 2, hints: ["Related to right and wrong", "A lesson from a fable", "Ethics, principles", "_ O R A _"] },
+  { outer: "displacement", inner: "place",   start: 3, hints: ["Could be anywhere", "A location or spot", "5 letters", "_ L A C _"] },
+  { outer: "uninterested", inner: "interest",start: 2, hints: ["Banks charge this", "Curiosity or a rate", "8 letters — a long one!", "Starts with I, ends with T"] },
+  { outer: "acknowledge",  inner: "know",    start: 2, hints: ["Related to understanding", "Very common 4-letter word", "The opposite of ignorance", "_ N O _"] },
+  { outer: "presidents",   inner: "resident",start: 1, hints: ["Someone who lives somewhere", "An occupant or inhabitant", "8 letters long", "Starts with R"] },
+  { outer: "kerosene",     inner: "rose",    start: 2, hints: ["Found in a garden", "A classic romantic gift", "A type of flower", "_ O S _"] },
+  { outer: "chambers",     inner: "amber",   start: 2, hints: ["Think of color or gemstones", "A warm golden hue", "Fossilized tree resin", "_ M B E _"] },
+  { outer: "stagnated",    inner: "gnat",    start: 3, hints: ["A tiny creature", "Buzzes around your face in summer", "A small flying insect", "_ N A _"] },
+  { outer: "factorial",    inner: "actor",   start: 1, hints: ["Works in entertainment", "Seen on stage or screen", "Plays a role", "_ C T O _"] },
+  { outer: "lotteries",    inner: "otter",   start: 1, hints: ["An adorable animal", "Loves to swim and play", "Holds hands while sleeping", "_ T T E _"] },
+  { outer: "overheard",    inner: "hear",    start: 4, hints: ["One of the five senses", "Done with your ears", "4 letters", "_ E A _"] },
+  { outer: "sidetracked",  inner: "track",   start: 4, hints: ["Found at a train station", "A path or course", "Athletes run on one", "_ R A C _"] },
+  { outer: "paraphrased",  inner: "phrase",  start: 4, hints: ["A unit of language", "A group of words", "Shorter than a sentence", "_ H R A S _"] },
+  { outer: "frankfurter",  inner: "rank",    start: 1, hints: ["Related to order or position", "Military people have one", "Rhymes with 'bank'", "_ A N _"] },
+  { outer: "cripples",     inner: "ripple",  start: 1, hints: ["Seen on water", "A small wave or disturbance", "Drop a stone in a pond", "_ I P P L _"] },
+  { outer: "unearths",     inner: "earth",   start: 2, hints: ["Beneath your feet", "The third planet", "Soil or our world", "_ A R T _"] },
+  { outer: "teetotalers",  inner: "total",   start: 3, hints: ["Related to numbers", "A complete sum", "Add everything up", "_ O T A _"] },
+  { outer: "courageously", inner: "rage",    start: 3, hints: ["A powerful emotion", "More intense than anger", "4 letters, fiery", "_ A G _"] },
+  { outer: "porpoises",    inner: "poise",   start: 3, hints: ["A quality of elegance", "Grace under pressure", "Balance and composure", "_ O I S _"] },
+  { outer: "installed",    inner: "stall",   start: 2, hints: ["Can mean to delay", "Found in a barn or market", "A booth or compartment", "_ T A L _"] },
+  { outer: "debunking",    inner: "bunk",    start: 2, hints: ["Can be a type of bed", "Also means nonsense", "4 letters", "_ U N _"] },
+  { outer: "proffers",     inner: "offer",   start: 2, hints: ["Something you might accept", "A proposal or deal", "To present something", "_ F F E _"] },
+  { outer: "refreshed",    inner: "fresh",   start: 2, hints: ["The opposite of stale", "Newly made or clean", "5 letters", "_ R E S _"] },
+  { outer: "distressing",  inner: "stress",  start: 2, hints: ["A modern epidemic", "Pressure or tension", "What deadlines cause", "_ T R E S _"] },
+  { outer: "sustained",    inner: "stain",   start: 2, hints: ["Hard to remove from clothes", "A mark or blemish", "Wine makes a red one", "_ T A I _"] },
+  { outer: "pinpointed",   inner: "point",   start: 3, hints: ["A sharp end", "A score in a game", "Can mean a location", "_ O I N _"] },
+  { outer: "environments", inner: "iron",    start: 3, hints: ["A metal element", "Used to press clothes", "Strong as ___", "_ R O _"] },
+  { outer: "blackened",    inner: "lack",    start: 1, hints: ["An absence", "To be without", "4 letters, means deficit", "_ A C _"] },
+  { outer: "chastens",     inner: "hasten",  start: 1, hints: ["To do something quickly", "Speed up!", "Means to hurry", "_ A S T E _"] },
+  { outer: "addictions",   inner: "diction", start: 2, hints: ["Related to speech", "How you pronounce words", "Style of speaking", "_ I C T I O _"] },
+  { outer: "deflation",    inner: "flat",    start: 2, hints: ["Level, no bumps", "Like a pancake", "The opposite of hilly", "_ L A _"] },
+  { outer: "identical",    inner: "dent",    start: 1, hints: ["Damage to a car", "A small depression", "What a fender bender leaves", "_ E N _"] },
+  { outer: "gravelling",   inner: "ravel",   start: 1, hints: ["To untangle or come apart", "The opposite of knitting together", "5 letters", "_ A V E _"] },
+  { outer: "equipping",    inner: "quip",    start: 1, hints: ["A type of humor", "A clever one-liner", "A witty remark", "_ U I _"] },
+  { outer: "manhandling",  inner: "hand",    start: 3, hints: ["At the end of your arm", "You wave with it", "Has five fingers", "_ A N _"] },
+];
+&nbsp;
+export default PUZZLES;
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-04-07T02:21:10.877Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
