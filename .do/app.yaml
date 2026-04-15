@@ -1,0 +1,53 @@
+name: swords
+region: nyc
+
+services:
+  - name: api
+    source_dir: swords-app/backend
+    github:
+      repo: lexicalninja/swords2
+      branch: main
+      deploy_on_push: true
+    run_command: npm start
+    environment_slug: node-js
+    instance_count: 1
+    instance_size_slug: apps-s-1vcpu-0.5gb
+    http_port: 3001
+    routes:
+      - path: /api
+    envs:
+      - key: PGHOST
+        value: ${db.HOSTNAME}
+      - key: PGPORT
+        value: ${db.PORT}
+      - key: PGDATABASE
+        value: ${db.DATABASE}
+      - key: PGUSER
+        value: ${db.USERNAME}
+      - key: PGPASSWORD
+        value: ${db.PASSWORD}
+        type: SECRET
+      - key: PORT
+        value: "3001"
+      - key: CORS_ORIGIN
+        value: ${APP_URL}
+
+static_sites:
+  - name: frontend
+    source_dir: swords-app/frontend
+    github:
+      repo: lexicalninja/swords2
+      branch: main
+      deploy_on_push: true
+    build_command: npm run build
+    output_dir: dist
+    routes:
+      - path: /
+    catchall_document: index.html
+
+databases:
+  - name: db
+    engine: PG
+    version: "16"
+    size: db-s-dev-database
+    num_nodes: 1
